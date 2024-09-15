@@ -28,10 +28,12 @@ if __name__ == "__main__":
     x = my_df.drop(columns=["_timestamp", "label"])
 
     # partitioning the dataset into a train and a test set
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.5, shuffle=False)
+    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.15, shuffle=False)
     # print(x_train)
     #
     # print(y_train)
+
+    print(x)
 
     # Set of classifiers that I want to run and compare
     classifiers = [VotingClassifier(estimators=[('lda', LinearDiscriminantAnalysis()),
