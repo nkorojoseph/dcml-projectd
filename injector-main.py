@@ -120,7 +120,7 @@ if __name__ == "__main__":
     inj_filename = 'inj_info.csv'
     inj_json = 'input_folder/injectors_json.json'
     inj_duration_sec = 2
-    exp_duration = 1000
+    exp_duration = 200
 
     # Extracting definitions of injectors from input JSON
     injectors = read_injectors(inj_json, inj_duration=inj_duration_sec*1000)

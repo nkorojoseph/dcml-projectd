@@ -136,4 +136,4 @@ if __name__ == "__main__":
     """
     Entry point for the Monitor
     """
-    main_monitor('output_folder/monitored_data_anomaly.csv', 1000, 1.0)
+    main_monitor('output_folder/realdata_without_fault.csv', 50, 1.0)
